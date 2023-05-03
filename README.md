@@ -15,7 +15,7 @@ A continuación, se presenta un resumen de los principales temas tratados en la 
 En resumen, esta conversación ha proporcionado una introducción útil a Laravel y sus principales herramientas y funcionalidades.
 
 
-El proyecto de inventarios, artículos y compañías utilizó Google Cloud Platform (GCP) para alojar el proyecto. GCP es una plataforma en la nube que ofrece una amplia gama de servicios de infraestructura, plataforma y software como servicio (IaaS, PaaS y SaaS) para empresas y desarrolladores.
+El proyecto  utilizó Google Cloud Platform (GCP) para alojar el proyecto. GCP es una plataforma en la nube que ofrece una amplia gama de servicios de infraestructura, plataforma y software como servicio (IaaS, PaaS y SaaS) para empresas y desarrolladores.
 En este proyecto en particular, se utilizó el servicio de App Engine de GCP para alojar la aplicación web y la base de datos se alojó en Cloud SQL, un servicio de base de datos administrado y escalable en la nube. El uso de servicios en la nube como GCP ofrece una gran cantidad de beneficios, como la escalabilidad, alta disponibilidad, seguridad y facilidad de uso, entre otros.
 
 
