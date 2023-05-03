@@ -75,11 +75,9 @@
                                 <input type="number" name="quantity" id="quantity" class="form-control" required>
                             </div>
                         </div>
-                        <div class="form-group row justify-content-center">
-                            <div class="col-lg-12 w-100">
+                        <br><br>
+                        <div class="text-center">
                             <button type="submit" class="btn btn-primary">Guardar</button>
-
-                            </div>
                         </div>
 
 
