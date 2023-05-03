@@ -17,6 +17,8 @@ class CreateArticlesInventoriesTable extends Migration
             $table->id();
             $table->unsignedBigInteger('article_id');
             $table->foreign('article_id')->references('id')->on('articles');
+            $table->unsignedBigInteger('inventory_id');
+            $table->foreign('inventory_id')->references('id')->on('inventories');
             $table->integer('quantity');
             $table->timestamps();
 
@@ -32,6 +34,6 @@ class CreateArticlesInventoriesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('articles_inventories');
+        Schema::dropIfExists('article_inventories');
     }
 }

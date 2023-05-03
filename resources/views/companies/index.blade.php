@@ -5,11 +5,6 @@
         <h1>Lista de Empresas</h1>
         <hr>
 
-        <p>Bienvenido, {{ Auth::user()->idrol }}</p>
-
-
-
-
         <a href="{{ route('companies.create') }}" class="btn btn-success mb-3">Agregar Empresa</a>
 
         @if(count($companies) > 0)
@@ -39,11 +34,8 @@
                                         <button type="submit" class="btn btn-danger" onclick="return confirm('¿Estás seguro de eliminar esta company?')">Eliminar</button>
                                     </form>
                                 </td>
-                            @else
-                                <td>
-                                    <a href="">asdf</a>
-                                </td>
-                             @endif
+                            @endif
+                            
 
                         </tr>
                     @endforeach

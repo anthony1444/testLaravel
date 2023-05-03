@@ -67,21 +67,15 @@ class CompanyController extends Controller
      */
     public function update(Request $request, $id)
     {
-        $validatedData = $request->validate([
-            'name' => 'required',
-            'address' => 'required',
-            'nit' => 'required|numeric|unique:empresas,nit,'.$id,
-            'telefono' => 'required|numeric'
-        ]);
 
         $company = Company::find($id);
-        $company->name = $validatedData['name'];
-        $company->address = $validatedData['address'];
-        $company->nit = $validatedData['nit'];
-        $company->phone = $validatedData['phone'];
+        $company->name = $request->input('name');
+        $company->address = $request->input('address');
+        $company->nit = $request->input('nit');
+        $company->phone = $request->input('phone');
         $company->save();
 
-        return redirect()->route('empresas.index')->with('success', 'Empresa actualizada exitosamente.');
+        return redirect()->route('companies.index')->with('success', 'Empresa actualizada exitosamente.');
     }
 
 
